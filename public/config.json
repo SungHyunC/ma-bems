@@ -1,5 +1,5 @@
 {
-    "gateway":  "",
-    "updated":  "2026-11-09T10:14:12Z",
+    "gateway":  "https://newest-chassis-opt-detected.trycloudflare.com",
+    "updated":  "2026-11-09T10:16:35Z",
     "note":  "Written by deploy/start-public.ps1 on the operator PC: the Cloudflare tunnel address of the AI gateway, or empty while the PC is offline."
 }
