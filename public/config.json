@@ -1,5 +1,5 @@
 {
-  "gateway": "",
-  "updated": null,
-  "note": "Written by deploy/start-public.ps1 on the operator PC: the address of the AI gateway's Cloudflare tunnel, or empty while the PC is offline."
+    "gateway":  "https://injured-comparative-beverage-hearing.trycloudflare.com",
+    "updated":  "2026-11-09T08:04:58Z",
+    "note":  "Written by deploy/start-public.ps1 on the operator PC: the Cloudflare tunnel address of the AI gateway, or empty while the PC is offline."
 }
