@@ -1,5 +1,5 @@
 {
-    "gateway":  "",
-    "updated":  "2026-11-09T10:17:12Z",
+    "gateway":  "https://dealt-obviously-deaf-bradford.trycloudflare.com",
+    "updated":  "2026-11-09T13:01:36Z",
     "note":  "Written by deploy/start-public.ps1 on the operator PC: the Cloudflare tunnel address of the AI gateway, or empty while the PC is offline."
 }
