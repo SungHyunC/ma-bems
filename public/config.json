@@ -1,5 +1,5 @@
 {
-    "gateway":  "https://chapter-budapest-dod-loved.trycloudflare.com",
-    "updated":  "2026-11-09T08:15:14Z",
+    "gateway":  "",
+    "updated":  "2026-11-09T10:14:12Z",
     "note":  "Written by deploy/start-public.ps1 on the operator PC: the Cloudflare tunnel address of the AI gateway, or empty while the PC is offline."
 }
