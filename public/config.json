@@ -1,5 +1,5 @@
 {
-    "gateway":  "https://kruger-notifications-washington-maternity.trycloudflare.com",
-    "updated":  "2026-11-09T08:11:23Z",
+    "gateway":  "",
+    "updated":  "2026-11-09T08:14:57Z",
     "note":  "Written by deploy/start-public.ps1 on the operator PC: the Cloudflare tunnel address of the AI gateway, or empty while the PC is offline."
 }
