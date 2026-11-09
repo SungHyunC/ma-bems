@@ -11168,14 +11168,16 @@ const AI_SITE = 'https://sunghyunc.github.io/ma-bems/';
 const AI_LOCALHOST = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
 const AI_GW = { mode: '', base: '', key: '', up: null, err: '' };
 try { AI_GW.key = localStorage.getItem('mabems.ai.key') || ''; } catch (e) { /* storage blocked */ }
-{
+function aiKeyFromHash() {                               // share link …/#key=…: keep the key, then take it out of the address bar
   const m = /(?:^#|&)key=([A-Za-z0-9_-]{20,})/.exec(location.hash);
-  if (m) {                                               // share link: keep the key, then take it out of the address bar
-    AI_GW.key = m[1];
-    try { localStorage.setItem('mabems.ai.key', AI_GW.key); } catch (e) { /* storage blocked */ }
-    history.replaceState(null, '', location.pathname + location.search);
-  }
+  if (!m) return false;
+  AI_GW.key = m[1];
+  try { localStorage.setItem('mabems.ai.key', AI_GW.key); } catch (e) { /* storage blocked */ }
+  history.replaceState(null, '', location.pathname + location.search);
+  return true;
 }
+aiKeyFromHash();
+addEventListener('hashchange', () => { if (aiKeyFromHash()) aiCheck(true); });   // link pasted into an open tab
 const aiAuth = () => (AI_GW.mode === 'remote' && AI_GW.key ? { Authorization: 'Bearer ' + AI_GW.key } : {});
 i18nAdd({
   en: {
