@@ -1,0 +1,5 @@
+{
+  "gateway": "",
+  "updated": null,
+  "note": "Written by deploy/start-public.ps1 on the operator PC: the address of the AI gateway's Cloudflare tunnel, or empty while the PC is offline."
+}
