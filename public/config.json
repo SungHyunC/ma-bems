@@ -1,5 +1,5 @@
 {
-    "gateway":  "https://medicine-cookie-essentially-charm.trycloudflare.com",
-    "updated":  "2026-11-11T05:42:12Z",
+    "gateway":  "https://rise-attachments-exchanges-appointments.trycloudflare.com",
+    "updated":  "2026-11-12T08:05:22Z",
     "note":  "Written by deploy/start-public.ps1 on the operator PC: the Cloudflare tunnel address of the AI gateway, or empty while the PC is offline."
 }
